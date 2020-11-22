@@ -1,0 +1,9 @@
+
+IDs (camelCase):
+    euSouOID
+    idDoElemento
+    
+classe (hifen)
+    eu-sou-uma-classe
+    fazer-coisa-assim
+
