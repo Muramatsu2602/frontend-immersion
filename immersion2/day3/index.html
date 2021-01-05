@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula CSS</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <style>
+        .bold {
+            font-weight: bolder;
+            color: violet;
+        }
+
+        .bold p {
+            background-color: steelblue;
+        }
+
+        .border {
+            border: 1px solid blue;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .height-400 {
+            height: 300px;
+            max-height: 500px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="souId" style="background-color: wheat;">
+        ich bin ein div!
+    </div>
+
+    <div id="outroId" class="bold">
+        Sou outro id tlg meu chapa
+        <p>Eu aqui sou especial</p>
+    </div>
+
+    <div class="flex height-400">
+        <div class="border ">Div 1</div>
+        <div class="border">Div 2</div>
+        <div class="border">Div 3</div>
+        <div class="border">Div 0</div>
+    </div>
+</body>
+
+</html>
