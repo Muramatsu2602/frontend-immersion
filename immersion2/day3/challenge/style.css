@@ -13,19 +13,18 @@ body {
 }
 
 /* Header */
-.top-buttons{
-    font-size: 13px ;
+.top-buttons {
+    font-size: 13px;
     display: flex;
     width: 100%;
 
     padding-top: 0.2rem;
-    padding-right: 0.5rem;
 
     justify-content: flex-end;
     align-items: center;
 }
 
-.top-buttons .header-item{
+.top-buttons .header-item {
     padding-right: 0.8rem;
     padding-top: 0.5rem;
 }
@@ -34,7 +33,7 @@ body {
     height: 20px;
 }
 
-#profile{
+#profile {
     height: 40px;
 }
 
@@ -53,7 +52,7 @@ header div a {
 }
 
 .main-logo {
-    padding: 109px 0px 0px;
+    padding: 150px 0px 0px;
 }
 
 .main-logo img {
@@ -69,15 +68,15 @@ header div a {
     border-style: solid;
     border-width: 1px;
     border-color: #dadce0;
-
-    padding: 0.5rem;
-    width: 482px;
+    
+    padding: 0.4rem;
+    width: 460px;
     max-height: 46px;
 }
 
 .main-searchbar img {
     height: 18px;
-    
+
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
     padding-right: 0.8rem;
@@ -112,8 +111,9 @@ header div a {
     border-radius: 4px;
     border: none;
 }
-.main-language{
-    font-size: 14px;
+
+.main-language {
+    font-size: 13px;
 }
 
 .main-language a {
