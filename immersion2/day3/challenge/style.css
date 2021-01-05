@@ -1,11 +1,22 @@
+/* General Classes */
+
 * {
     margin: 0;
     padding: 0;
 }
 
+body {
+    background: #fff;
+    color: #202124;
+    font-family: arial, sans-serif;
+    align-items: center;
+}
+
 .container {
     align-items: flex-end;
 }
+
+/* Header */
 
 header div {
     text-align: end;
@@ -17,15 +28,21 @@ header div a {
     white-space: nowrap;
 }
 
-body {
-    background: #fff;
-    color: #202124;
-    font-family: arial, sans-serif;
+/* Center Section */
+.center-section {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-main {
-    align-items: center;
+.main-logo {
+    padding: 109px 0px 0px;
+}
+
+.main-logo img {
+    max-height: 201px;
+    max-width: 272px;
+    padding-bottom: 1.5rem;
 }
 
 .main-searchbar {
@@ -36,26 +53,24 @@ main {
     border-width: 1px;
     border-color: #dadce0;
 
-    padding: 2%;
-    max-width: 482px;
+    padding: 0.4rem;
+    width: 482px;
     max-height: 46px;
+}
+
+.main-searchbar img {
+    height: 24px;
 }
 
 .main-searchbar input {
     background-color: transparent;
     border: none;
-    margin: 0;
-    padding: 0;
     color: rgba(0, 0, 0, .87);
     outline: none;
     display: flex;
     flex: 100%;
-    margin-top: -37px;
+    font-size: 16px;
     word-wrap: break-word;
-
-    /* word-wrap: break-word;
-    height: 34px;
-    font-size: 16px; */
 }
 
 .main-searchbar img {
@@ -63,6 +78,7 @@ main {
 }
 
 .main-buttons {
+    padding: 1rem;
     align-items: center;
 }
 
@@ -80,12 +96,14 @@ main {
     text-decoration: none;
 }
 
+/* Footer */
 footer {
     color: rgba(0, 0, 0, .54);
     background-color: #f2f2f2;
     bottom: 0;
-    font-size: 10pt;
+    font-size: 15px;
     border-top: 1px solid #dadce0;
+    text-align: left;
 
     position: absolute;
     width: 100%;
@@ -93,6 +111,7 @@ footer {
 
 .footer-links-parent {
     display: flex;
+    justify-content: space-between;
     padding: 1%;
 }
 
