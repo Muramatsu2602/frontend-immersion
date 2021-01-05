@@ -28,6 +28,29 @@ main {
     align-items: center;
 }
 
+.main-searchbar input{
+
+}
+
+.main-buttons {
+    align-items: center;
+}
+
+.main-buttons button {
+    background-color: #F8F9FA;
+    margin: 11px 4px;
+    padding: 10px 16px;
+
+    border-radius: 4px;
+    border: none;
+}
+
+.main-language a {
+    color: #1A0DAB;
+    padding: 0px 3px;
+    text-decoration: none;
+}
+
 #mic {
     height: 2rem;
 }
