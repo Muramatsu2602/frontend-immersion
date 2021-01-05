@@ -28,8 +28,38 @@ main {
     align-items: center;
 }
 
-.main-searchbar input{
+.main-searchbar {
+    display: flex;
+    border-radius: 9999px;
 
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dadce0;
+
+    padding: 2%;
+    max-width: 482px;
+    max-height: 46px;
+}
+
+.main-searchbar input {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, .87);
+    outline: none;
+    display: flex;
+    flex: 100%;
+    margin-top: -37px;
+    word-wrap: break-word;
+
+    /* word-wrap: break-word;
+    height: 34px;
+    font-size: 16px; */
+}
+
+.main-searchbar img {
+    height: 2rem;
 }
 
 .main-buttons {
@@ -46,13 +76,8 @@ main {
 }
 
 .main-language a {
-    color: #1A0DAB;
     padding: 0px 3px;
     text-decoration: none;
-}
-
-#mic {
-    height: 2rem;
 }
 
 footer {
