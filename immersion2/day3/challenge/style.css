@@ -95,7 +95,7 @@ header div a {
 }
 
 .main-searchbar img {
-    height: 1.2rem;
+    height: 1.15rem;
 }
 
 .main-buttons {
@@ -126,7 +126,8 @@ footer {
     color: rgba(0, 0, 0, .54);
     background-color: #f2f2f2;
     bottom: 0;
-    font-size: 15px;
+
+    font-size: 14px;
     border-top: 1px solid #dadce0;
     text-align: left;
 
@@ -137,12 +138,16 @@ footer {
 .footer-links-parent {
     display: flex;
     justify-content: space-between;
-    padding: 1%;
+
+    padding-top: 1.4%;
+    padding-bottom: 1%;
+    padding-left: 1.8%;
+    padding-right: 1%;
 }
 
 .footer-links-location {
     border-bottom: 1px solid #dadce0;
-    padding: 10px 10px 10px 27px;
+    padding: 10px 10px 10px 25px;
 }
 
 .footer-links-left {
