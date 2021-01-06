@@ -18,14 +18,14 @@ body {
     display: flex;
     width: 100%;
 
-    padding-top: 0.2rem;
+    padding-top: 0.1rem;
 
     justify-content: flex-end;
     align-items: center;
 }
 
 .top-buttons .header-item {
-    padding-right: 0.8rem;
+    padding-right: 1.3rem;
     padding-top: 0.5rem;
 }
 
@@ -95,11 +95,15 @@ header div a {
 }
 
 .main-searchbar img {
-    height: 1.15rem;
+    height: 1.2rem;
 }
 
 .main-buttons {
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1.2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+
     align-items: center;
 }
 
@@ -126,8 +130,7 @@ footer {
     color: rgba(0, 0, 0, .54);
     background-color: #f2f2f2;
     bottom: 0;
-
-    font-size: 14px;
+    font-size: 15px;
     border-top: 1px solid #dadce0;
     text-align: left;
 
@@ -138,16 +141,12 @@ footer {
 .footer-links-parent {
     display: flex;
     justify-content: space-between;
-
-    padding-top: 1.4%;
-    padding-bottom: 1%;
-    padding-left: 1.8%;
-    padding-right: 1%;
+    padding: 0.6%;
 }
 
 .footer-links-location {
     border-bottom: 1px solid #dadce0;
-    padding: 10px 10px 10px 25px;
+    padding: 10px 10px 10px 27px;
 }
 
 .footer-links-left {
@@ -162,7 +161,7 @@ footer {
 
 footer a {
     color: #70757a;
-    margin: 2px 10px 0px;
+    margin: 2px 15px 0px;
 
     text-decoration: none;
     white-space: nowrap;
