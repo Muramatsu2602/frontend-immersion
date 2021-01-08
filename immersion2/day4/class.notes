@@ -1,1 +1,39 @@
-[2021-01-07]
+[2021-01-07] *2a Imersão frontend: Revisão Google*
+
+# CSS
+Types of case:
+- camelCase
+- PascalCase ==> classe ou instancias
+- kebab-case
+- snake_case ==> mais para servidores
+
+[css]
+    input{}
+    a{}
+    div{}
+
+    camelCase
+    #id {}
+    #id2 {}
+    #id3 {}
+
+    kebab-case
+    .class{}
+    .class2{}
+[end]
+
+
+# Unities
+
+- Borders => px
+- Espacamento => !rem!/em/cm --> rem eh bom pra dispositivos
+- Gerar PDF => cm
+
+*pixel varia de tela pra tela.
+
+margin --> se espacando pra fora
+padding -->  espacamento interno
+
+"​padding é legal pra elemento inline"
+
+!ALWAYS USE ONLY ONE DIV IN BODY!
