@@ -1,0 +1,10 @@
+[2021-01-11] *Javascript*
+
+O que eh:
+- usada como engrenagens do seu site
+
+Javascript nao eh tipada:
+- tudo eh objecto
+
+var -> pode mudar a qualquer hora
+const -> imutavel
