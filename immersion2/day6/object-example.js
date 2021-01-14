@@ -27,3 +27,15 @@ var house1 = new House(50, "green", 3);
 var house2 = new House(200, "white", 10);
 
 console.log(house1);
+
+class House3 {
+    constructor(size, color, rooms) {
+        this.size = size;
+        this.color = color;
+        this.rooms = rooms;
+
+        this.calcPrice = function () {
+            return this.size = this.rooms + 10;
+        };
+    }
+}
