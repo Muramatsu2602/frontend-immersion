@@ -3,10 +3,23 @@
 "Voce nasce, se educa, ganha certificacao, emprego publico, aposenta e faz nada"
 
 
+================================>
 Final Project:
 - Magick-like deck using HTML, CSS and JS
 - Last challenge --> 1 ano de ingate para quem entrega
-
+- Loja --> carta vem com (nome, vida, ataque, defesa e preco)
+- usa shuffle para definir valor de cartas
+==================================>
 
 Cria objeto
 - CRUD
+
+[js]
+    var House = {
+        size: 50,
+        color: "green",
+        rooms: 3,
+    }
+[end]
+
+
