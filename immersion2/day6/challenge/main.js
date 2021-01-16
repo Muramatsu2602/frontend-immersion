@@ -109,4 +109,6 @@ function studentDelete(students, id) {
 }
 
 studentDelete(students, 2);
+studentDelete(students, 9);
+
 studentPrint(studentsGetStudent(students, 2));
