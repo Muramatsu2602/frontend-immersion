@@ -76,7 +76,7 @@ function studentUpdateField(students, id, field, content) {
             students[index][field] = content;
         }
     } else {
-        console.log(`ERROR WHEN UPDATING FIELD OF #${students[id].id} STUDENT`);
+        console.log(`ERROR WHEN UPDATING FIELD OF #${id} STUDENT`);
     }
 }
 
