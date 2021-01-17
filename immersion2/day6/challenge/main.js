@@ -33,7 +33,7 @@ console.log(students[0]);
 
 // gets a Student from Students by its ID
 function studentsGetStudent(students, id) {
-    if (students != null && (id) <= students.length) {
+    if (students !== null && (id) <= students.length) {
         return students[id - 1]; // Example: student of ID 3 in slot 2
     }
     return null;
@@ -41,7 +41,7 @@ function studentsGetStudent(students, id) {
 
 // General Printing function for Student
 function studentPrint(student) {
-    if (student != null) {
+    if (student !== null) {
         console.log(`-----------\nSTUDENT #${student.id} DATA\n`);
         console.log(`Name:\t${student.name}\n`);
         console.log(`Birthdate:\t${student.birthdate}\n`);
@@ -56,7 +56,7 @@ function studentPrint(student) {
 
 // printing all students
 function studentsPrintAll(students) {
-    if (students != null && students.length > 0) {
+    if (students !== null && students.length > 0) {
         console.log("\t\t=======PRINTING ALL STUDENTS=======\n");
         for (var i = 0; i < students.length; i++) {
             studentPrint(students[i]);
@@ -69,38 +69,31 @@ studentsPrintAll(students);
 
 // UPDATE
 function studentUpdateField(students, id, field, content) {
-    if (students != null && id >= 1 && field != '') {
+    if (students !== null && id >= 1 && field !== '') {
         const index = id - 1; // because arrays start at 0
 
-        if (field == "name") {
-            students[index].name = content;
-        } else if (field == "birthdate") {
-            students[index].birthdate = content;
-        } else if (field == "nationality") {
-            students[index].nationality = content;
-        } else if (field == "gpa") {
-            students[index].gpa = content;
-        } else if (field == "isEnrolled") {
-            students[index].isEnrolled = content;
+        if (students[index].hasOwnProperty(field)) { // testing if field is valid
+            students[index][field] = content;
         }
     } else {
         console.log(`ERROR WHEN UPDATING FIELD OF #${students[id].id} STUDENT`);
     }
 }
 
-studentUpdateField(students, 2, "name", "Marcos J");
+studentUpdateField(students, 2, "nationality", "Belarussian");
+studentUpdateField(students, 2, "gpa", 1.9);
 studentUpdateField(students, 4, "isEnrolled", true);
 
 studentPrint(studentsGetStudent(students, 2));
 studentPrint(studentsGetStudent(students, 4));
 
-
 // DELETE
 function studentDelete(students, id) {
-    if (students != null && id >= 1) {
+    if (students !== null && id >= 1) {
         const index = id - 1;
+
         // testing if such id was not already deleted
-        if (students[index] == null) {
+        if (students[index] === null) {
             console.log(`Student of ID:${id} was not found, therefore cannot be deleted!`);
             return;
         }
