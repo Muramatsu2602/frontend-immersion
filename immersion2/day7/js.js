@@ -2,10 +2,15 @@
  *  document --> objeto
  *
  */
-var el = document.createElement("div");
+var hi = document.getElementById("ola");
+var world = document.createworldement("div");
+var bold = document.getElementsByClassName("negrito");
 
-el.innerHTML = "Mundo";
-el.style.border = "1px bold solid black";
-el.classList.add("negrito");
+world.innerHTML = "Mundo";
+world.style.border = "1px bold solid black";
+world.classList.add("negrito");
 
-document.body.appendChild(el); // cant append child outside body
+document.body.appendChild(world); // cant append child outside body
+
+console.log(hi);
+console.log(world);
