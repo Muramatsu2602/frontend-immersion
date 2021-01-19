@@ -5,3 +5,13 @@ https://www.youtube.com/watch?v=lqjzZXqFVkQ&ab_channel=Yoyonobouken
 
 getElementById ==> custa caro
 getElementByClass ==> dificilmente usados
+
+# Challenge 
+- Simple HTML page with only JS
+- trying functions create line, create table etc
+- header, body, footer, etc
+
+# question for Yoyonobouken
+"Voce recomenda criar funcoes para cada secao da pagina (header,footer) como se fossem componentes do React? "
+
+"Ou funcoes mais gerais como um createTable, que gera tags html table/tr/th"
