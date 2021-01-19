@@ -2,3 +2,6 @@
 https://www.youtube.com/watch?v=lqjzZXqFVkQ&ab_channel=Yoyonobouken
 
 # Injetar, manipular , alterar componentes HTML com JS
+
+getElementById ==> custa caro
+getElementByClass ==> dificilmente usados
