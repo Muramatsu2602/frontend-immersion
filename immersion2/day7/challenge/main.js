@@ -15,6 +15,11 @@ container.style.width = " 100vw";
 container.style.height = "100vh";
 container.style.display = "flex";
 container.style.backgroundColor = "blue";
+container.style.fontFamily = "arial";
+
+container.style.justifyContent = "space-between";
+
+container.style.flexDirection = "column";
 
 document.body.appendChild(container);
 
@@ -26,7 +31,6 @@ header.style.width = " 100vw";
 header.style.display = "flex";
 header.style.alignItems = "center";
 header.style.justifyContent = "space-between";
-header.style.padding = "0rem 1rem 0rem 1rem";
 header.style.backgroundColor = "red";
 
 container.appendChild(header);
@@ -36,8 +40,8 @@ var header_text = document.createElement("div");
 
 header_text.innerHTML = "JS-Only website";
 header_text.style.color = "white";
-header_text.style.fontFamily = "arial";
 header_text.style.fontWeight = "bold";
+header_text.style.paddingLeft = "1rem";
 
 header.appendChild(header_text);
 
@@ -48,33 +52,41 @@ var header_logo_content = document.createElement("img");
 header_logo_content.src =
   "https://avatars.githubusercontent.com/u/37938401?s=460&u=dab576ac10130761a2ce61497972191a2fa5d673&v=4";
 header_logo_content.style.height = "3rem";
+header_logo_content.style.paddingRight = "1rem";
 
 header.appendChild(header_logo);
 header_logo.appendChild(header_logo_content);
 
 // Body
 var body = document.createElement("div");
+var body_video_container = document.createElement("div");
+var body_video_content = document.createElement("video");
+
+body_video_container.style.height = "30vh";
+body_video_container.style.width = "100vw";
+body_video_container.style.backgroundColor = "green";
+
 
 container.appendChild(body);
+body.appendChild(body_video_container);
 
 // Footer
-
-// color: rgba(0, 0, 0, .54);
-//     background-color: #f2f2f2;
-//     font-size: 15px;
-//     border-top: 1px solid #dadce0;
-//     text-align: left;
-
-//     position: absolute;
-//     bottom: 0;
-//     width: 100%;
-
 var footer = document.createElement("div");
 
 footer.style.color = "white";
-footer.style.backgroundColor = "#f2f2f2";
+footer.style.backgroundColor = "grey";
 footer.style.fontSize = "15px";
-footer.style.borderTop = "1px solid #dadce0";
-footer.style.
+footer.style.textAlign = "left";
 
-container.appendChild("footer");
+footer.style.position = "absolute";
+footer.style.bottom = "0";
+footer.style.width = "100vw";
+footer.style.height = "5vh";
+
+container.appendChild(footer);
+
+var footer_content = document.createElement("div");
+
+footer_content.innerHTML = "I am the Footer";
+
+footer.appendChild(footer_content);
