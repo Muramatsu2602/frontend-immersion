@@ -34,7 +34,7 @@ container.appendChild(header);
 // header text
 var header_text = document.createElement("div");
 
-header_text.innerHTML = "THIS IS A JS-Only website";
+header_text.innerHTML = "JS-Only website";
 header_text.style.color = "white";
 header_text.style.fontFamily = "arial";
 header_text.style.fontWeight = "bold";
