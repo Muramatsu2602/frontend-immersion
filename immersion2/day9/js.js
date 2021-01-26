@@ -8,12 +8,32 @@ var App = {
     console.log("Fim do App");
   },
   store: {},
-  controllers: {},
+  controllers: {
+    createDiv: function () {
+      var el = document.createElement("div");
+      el.innerHTML = "Sou um div novo";
+      el.style.border = "1px solid black";
+
+      el.setAttribute("i", App.elements.els.length);
+    
+      // deletes the generated i whenever we click on it
+      el.onclick = function (event) {
+        var clickedI = event.target.getAttribute("i");
+        App.elements.els.splice(clickedI, 1);
+        console.log(event.target);
+      };
+
+      App.elements.elsContainer.appendChild(el);
+      App.elements.els.push(el);
+    },
+  },
   elements: {
     app: null,
     header: null,
     body: null,
     footer: null,
+    button: null,
+    els: [],
 
     createApp: function () {
       // container
@@ -40,6 +60,11 @@ var App = {
       this.body.innerHTML = "Eu sou body";
       this.body.style.border = " 1px solid green";
       this.app.appendChild(this.body);
+
+      // Button
+      this.button = document.createElement("button");
+      this.button.innerHTML = "click";
+      this.button.onclick = App.controllers.createDiv;
     },
 
     createFooter: function () {
