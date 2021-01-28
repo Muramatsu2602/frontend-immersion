@@ -8,7 +8,25 @@ var App = {
     console.log("Fim do App");
   },
   store: {},
-  controllers: {},
+  controllers: {
+    createDiv: function () {
+      var el = document.createElement("div");
+      el.innerHTML = "Sou um div novo";
+      el.style.border = "1px solid black";
+
+      el.setAttribute("i", App.elements.els.length);
+
+      // deletes the generated i whenever we click on it
+      el.onclick = function (event) {
+        var clickedI = event.target.getAttribute("i");
+        App.elements.els.splice(clickedI, 1);
+        console.log(event.target);
+      };
+
+      App.elements.elsContainer.appendChild(el);
+      App.elements.els.push(el);
+    },
+  },
   elements: {
     app: null,
     header: null,
