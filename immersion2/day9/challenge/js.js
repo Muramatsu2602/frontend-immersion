@@ -43,7 +43,7 @@ var App = {
           const header_img_profile = document.createElement("img");
 
       // top-buttons
-      this.header.style.fontSize = "13px";
+      this.header.style.fontSize = "14px";
       this.header.style.width = "100%";
       this.header.style.paddingTop = "0.1rem";
       this.header.style.display = "flex";
@@ -51,7 +51,6 @@ var App = {
       this.header.style.alignItems = "center";
 
       // all top-buttons' children
-      
       header_link_gmail.innerHTML = "Gmail";
       header_link_gmail.style.paddingRight = "1.3rem";
       header_link_gmail.style.paddingTop = "0.5rem";
@@ -61,7 +60,7 @@ var App = {
       header_link_images.style.paddingTop = "0.5rem";
 
       header_img_cube.src = "https://cdn3.iconfinder.com/data/icons/navigation-and-settings/24/Material_icons-01-11-512.png";
-      header_img_cube.style.height = "23px";
+      header_img_cube.style.height = "27px";
       header_img_cube.style.paddingRight = "1.3rem";
       header_img_cube.style.paddingTop = "0.5rem";
 
