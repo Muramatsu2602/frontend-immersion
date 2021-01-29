@@ -84,7 +84,7 @@ var App = {
       // footer_links_location
       footer_links_location.innerHTML = "Brazil";
       footer_links_location.style.borderBottom = "1px solid #dadce0";
-      footer_links_location.style.padding = "10px 10px 27px";
+      footer_links_location.style.padding = "17px 10px 17px 10px";
 
       // footer_links_parent
       footer_links_parent.style.display = "flex";
@@ -93,7 +93,9 @@ var App = {
 
       // footer_links_left
       footer_links_left.style.display = "flex";
+      footer_links_left.style.justifyContent = "space-between";
       footer_links_left.style.textAlign = "left";
+      footer_links_left.style.width = "25rem";
 
       // applying style to all links (a element) in footer_links_left
       footer_link_advertising.innerHTML = "Advertising";
@@ -104,6 +106,9 @@ var App = {
       // footer_links_right
       footer_links_right.style.display = "flex";
       footer_links_right.style.textAlign = "right";
+      footer_links_right.style.justifyContent = "space-between";
+      footer_links_right.style.width = "13rem";
+
 
       // applying style to all links (a element) in footer_links_left
       footer_link_privacy.innerHTML = "Privacy";
@@ -112,7 +117,7 @@ var App = {
 
       // footer_links_right
       footer_links_right.style.display = "flex";
-      
+
       footer_links_right.style.textAlign = "right";
 
       // appending all divs in footer starting with the outermost layer
