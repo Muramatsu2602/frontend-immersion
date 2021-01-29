@@ -37,13 +37,44 @@ var App = {
     createHeader: function () {
       // header (IDENTATION MEANS HIERARCHY)
       this.header = document.createElement("div");
-        const header_top_buttons = document.createElement("div");
           const header_link_gmail = document.createElement("a");
           const header_link_images = document.createElement("a");
           const header_img_cube = document.createElement("img");
           const header_img_profile = document.createElement("img");
 
+      // top-buttons
+      this.header.style.fontSize = "13px";
+      this.header.style.width = "100%";
+      this.header.style.paddingTop = "0.1rem";
+      this.header.style.display = "flex";
+      this.header.style.justifyContent = "flex-end";
+      this.header.style.alignItems = "center";
+
+      // all top-buttons' children
+      
+      header_link_gmail.innerHTML = "Gmail";
+      header_link_gmail.style.paddingRight = "1.3rem";
+      header_link_gmail.style.paddingTop = "0.5rem";
+
+      header_link_images.innerHTML = "Images";
+      header_link_images.style.paddingRight = "1.3rem";
+      header_link_images.style.paddingTop = "0.5rem";
+
+      header_img_cube.src = "https://cdn3.iconfinder.com/data/icons/navigation-and-settings/24/Material_icons-01-11-512.png";
+      header_img_cube.style.height = "23px";
+      header_img_cube.style.paddingRight = "1.3rem";
+      header_img_cube.style.paddingTop = "0.5rem";
+
+      header_img_profile.src = "https://lh3.googleusercontent.com/proxy/zrfta5Y9CclASG91wH8uN-l4aarjAc4j49Jk97ERc4EbNxPlbAbqCHt4bE56GyeUh_qSpfmYtYlpsHqr4f-GsSY2N571FJ8O0dK-OOvEnFQTdlZoPdZrbdw";
+      header_img_profile.style.height ="35px";
+      header_img_profile.style.paddingRight = "1.3rem";
+      header_img_profile.style.paddingTop = "0.5rem";
+
       this.app.appendChild(this.header);
+      this.header.appendChild(header_link_gmail);
+      this.header.appendChild(header_link_images);
+      this.header.appendChild(header_img_cube);
+      this.header.appendChild(header_img_profile);
     },
 
     createBody: function () {
@@ -148,7 +179,7 @@ var App = {
       console.log("Iniciando a criacao dos elementos");
 
       this.createApp();
-      // this.createHeader();
+      this.createHeader();
       this.createBody();
       this.createFooter();
 
