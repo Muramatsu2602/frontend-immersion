@@ -35,16 +35,13 @@ var App = {
     },
 
     createHeader: function () {
-      // header
+      // header (IDENTATION MEANS HIERARCHY)
       this.header = document.createElement("div");
-
-      this.header.style.fontSize = "13px";
-      this.header.style.width = "100%";
-
-      this.header.style.paddingTop = "0.1rem";
-
-      this.header.style.justifyContent = "flex-end";
-      this.header.style.display = "flex";
+        const header_top_buttons = document.createElement("div");
+          const header_link_gmail = document.createElement("a");
+          const header_link_images = document.createElement("a");
+          const header_img_cube = document.createElement("img");
+          const header_img_profile = document.createElement("img");
 
       this.app.appendChild(this.header);
     },
@@ -99,9 +96,14 @@ var App = {
 
       // applying style to all links (a element) in footer_links_left
       footer_link_advertising.innerHTML = "Advertising";
+      footer_link_advertising.style.cursor = "pointer";
       footer_link_business.innerHTML = "Business";
+      footer_link_business.style.cursor = "pointer";
       footer_link_about.innerHTML = "About";
+      footer_link_about.style.cursor = "pointer";
       footer_link_howSearch.innerHTML = "How Search Works";
+      footer_link_howSearch.style.cursor = "pointer";
+
 
       // footer_links_right
       footer_links_right.style.display = "flex";
@@ -112,8 +114,12 @@ var App = {
 
       // applying style to all links (a element) in footer_links_left
       footer_link_privacy.innerHTML = "Privacy";
+      footer_link_privacy.style.cursor = "pointer";
       footer_link_terms.innerHTML = "Terms";
+      footer_link_terms.style.cursor = "pointer";
       footer_link_settings.innerHTML = "Settings";
+      footer_link_settings.style.cursor = "pointer";
+
 
       // footer_links_right
       footer_links_right.style.display = "flex";
