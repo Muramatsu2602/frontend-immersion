@@ -50,25 +50,31 @@ var App = {
       this.header.style.justifyContent = "flex-end";
       this.header.style.alignItems = "center";
 
-      // all top-buttons' children
+      // header_link_gmail
+      header_link_gmail.style.cursor = "pointer";
       header_link_gmail.innerHTML = "Gmail";
       header_link_gmail.style.paddingRight = "1.3rem";
       header_link_gmail.style.paddingTop = "0.5rem";
 
+      // header_link_images
+      header_link_images.style.cursor = "pointer";
       header_link_images.innerHTML = "Images";
       header_link_images.style.paddingRight = "1.3rem";
       header_link_images.style.paddingTop = "0.5rem";
 
+      // header_img_cube
+      header_img_cube.style.cursor = "pointer";
       header_img_cube.src = "https://cdn3.iconfinder.com/data/icons/navigation-and-settings/24/Material_icons-01-11-512.png";
       header_img_cube.style.height = "27px";
       header_img_cube.style.paddingRight = "1.3rem";
       header_img_cube.style.paddingTop = "0.5rem";
 
+      // header_img_profile
+      header_img_profile.style.cursor = "pointer";
       header_img_profile.src = "https://cdn0.iconfinder.com/data/icons/elasto-online-store/26/00-ELASTOFONT-STORE-READY_user-circle-256.png";
       header_img_profile.style.height ="33px";
       header_img_profile.style.paddingRight = "1.3rem";
       header_img_profile.style.paddingTop = "0.5rem";
-
 
       // appending every div beggining with the outermost layer
       this.app.appendChild(this.header);
@@ -119,6 +125,7 @@ var App = {
 
       // body_searchbar
       body_searchbar.style.width = "90%";
+      body_searchbar.style.outline = "none";
       body_searchbar.style.backgroundColor = "transparent";
       body_searchbar.style.border = "none";
       body_searchbar.style.color = "rgba(0,0,0, .87)";
@@ -127,6 +134,7 @@ var App = {
       body_searchbar.style.wordWrap = "break-word";
 
       // body_mic
+      body_mic.style.cursor = "pointer";
       body_mic.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png";
       body_mic.style.height = "1.2rem";
       body_mic.style.padding = "0.3rem 0.8rem 0.3rem 0.8rem";
