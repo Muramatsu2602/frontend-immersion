@@ -115,8 +115,19 @@ var App = {
       body_searchbar_container.style.borderWidth = "1px";
       body_searchbar_container.style.color = "#dadce0";
       body_searchbar_container.style.padding = "0.4rem";
-      body_searchbar_container.style.width = "560px";
+      body_searchbar_container.style.width = "473px";
       body_searchbar_container.style.maxHeight = "46px";
+
+      // events of body_searchbar_container
+      body_searchbar_container.onmouseover = function (event) {
+        body_searchbar_container.style.boxShadow = "1px 1px 2px #999";
+        body_searchbar_container.style.borderStyle = "solid";
+        body_searchbar_container.style.borderColor = "lightgray";
+      };
+
+      body_searchbar_container.onmouseleave = function (event) {
+        body_searchbar_container.style.boxShadow = "0px 0px 0px transparent";
+      };
 
       // body_magnifying_glass
       body_magnifying_glass.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Google_Magnifying_Glass.svg/1200px-Google_Magnifying_Glass.svg.png";
@@ -133,6 +144,7 @@ var App = {
       body_searchbar.style.font = "18px";
       body_searchbar.style.wordWrap = "break-word";
 
+    
       // body_mic
       body_mic.style.cursor = "pointer";
       body_mic.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png";
@@ -153,6 +165,18 @@ var App = {
       body_button_googlesearch.style.borderRadius = "4px";
       body_button_googlesearch.style.border = "none";
 
+      // events of body_button_googlesearch
+      body_button_googlesearch.onmouseover = function (event) {
+        body_button_googlesearch.style.boxShadow = "1px 1px 2px #999";
+        body_button_googlesearch.style.borderStyle = "solid";
+        body_button_googlesearch.style.borderColor = "lightgray";
+      };
+
+      body_button_googlesearch.onmouseleave = function (event) {
+        body_button_googlesearch.style.boxShadow = "0px 0px 0px transparent";
+        body_button_googlesearch.style.border = "none";
+      };
+
       // body_button_feelinglucky
       body_button_feelinglucky.style.cursor = "pointer";
       body_button_feelinglucky.innerHTML = "I'm Feeling Lucky";
@@ -163,6 +187,18 @@ var App = {
       body_button_feelinglucky.style.borderRadius = "4px";
       body_button_feelinglucky.style.border = "none";
 
+      // events of body_button_feelinglucky
+      body_button_feelinglucky.onmouseover = function (event) {
+        body_button_feelinglucky.style.boxShadow = "1px 1px 2px #999";
+        body_button_feelinglucky.style.borderStyle = "solid";
+        body_button_feelinglucky.style.borderColor = "lightgray";
+      };
+
+      body_button_feelinglucky.onmouseleave = function (event) {
+        body_button_feelinglucky.style.boxShadow = "0px";
+        body_button_feelinglucky.style.border = "none";
+      };
+
       // body_language_container
       body_language_container.color = "13px";
       body_language_container.innerHTML = "Google Offered in: ";
@@ -172,7 +208,6 @@ var App = {
       body_language.style.color = "#1a0dab";
       body_language.style.cursor = "pointer";
       body_language.innerHTML = "Português (Brasil)";
-
 
       // appending every div beggining with the outermost layer
       this.app.appendChild(this.body);
@@ -202,6 +237,7 @@ var App = {
             const footer_link_privacy = document.createElement("a");
             const footer_link_terms = document.createElement("a");
             const footer_link_settings = document.createElement("a");
+
       // footer
       this.footer.style.color = "rgba(0, 0, 0, .54)";
       this.footer.style.backgroundColor = "#f2f2f2";
@@ -239,7 +275,6 @@ var App = {
       footer_link_howSearch.innerHTML = "How Search Works";
       footer_link_howSearch.style.cursor = "pointer";
 
-
       // footer_links_right
       footer_links_right.style.display = "flex";
       footer_links_right.style.textAlign = "right";
@@ -258,7 +293,6 @@ var App = {
 
       // footer_links_right
       footer_links_right.style.display = "flex";
-
       footer_links_right.style.textAlign = "right";
 
       // appending all divs in footer starting with the outermost layer
