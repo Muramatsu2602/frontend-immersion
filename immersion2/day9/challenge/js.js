@@ -43,7 +43,7 @@ var App = {
           const header_img_profile = document.createElement("img");
 
       // top-buttons
-      this.header.style.fontSize = "14px";
+      this.header.style.fontSize = "13px";
       this.header.style.width = "100%";
       this.header.style.paddingTop = "0.1rem";
       this.header.style.display = "flex";
@@ -64,11 +64,13 @@ var App = {
       header_img_cube.style.paddingRight = "1.3rem";
       header_img_cube.style.paddingTop = "0.5rem";
 
-      header_img_profile.src = "https://lh3.googleusercontent.com/proxy/zrfta5Y9CclASG91wH8uN-l4aarjAc4j49Jk97ERc4EbNxPlbAbqCHt4bE56GyeUh_qSpfmYtYlpsHqr4f-GsSY2N571FJ8O0dK-OOvEnFQTdlZoPdZrbdw";
-      header_img_profile.style.height ="35px";
+      header_img_profile.src = "https://cdn0.iconfinder.com/data/icons/elasto-online-store/26/00-ELASTOFONT-STORE-READY_user-circle-256.png";
+      header_img_profile.style.height ="33px";
       header_img_profile.style.paddingRight = "1.3rem";
       header_img_profile.style.paddingTop = "0.5rem";
 
+
+      // appending every div beggining with the outermost layer
       this.app.appendChild(this.header);
       this.header.appendChild(header_link_gmail);
       this.header.appendChild(header_link_images);
@@ -77,10 +79,35 @@ var App = {
     },
 
     createBody: function () {
-      // body
+      // body (IDENTATION MEANS HIERARCHY)
       this.body = document.createElement("div");
+        const body_main_logo = document.createElement("img");
+        const body_searchbar_container = document.createElement("div");
+          const body_magnifying_glass = document.createElement("img");
+          const body_searchbar = document.createElement("input");
+          const body_mic = document.createElement("mic");
+        const body_buttons = document.createElement("div");
+          const body_button_googlesearch = document.createElement("button");
+          const body_button_feelinglucky = document.createElement("button");
+        const body_language_container = document.createElement("div");
+          const body_language = document.createElement("a");
 
+      // body
+
+
+
+      // appending every div beggining with the outermost layer
       this.app.appendChild(this.body);
+      this.body.appendChild(body_main_logo);
+      this.body.appendChild(body_searchbar_container);
+      this.body_language_container.appendChild(body_magnifying_glass);
+      this.body_language_container.appendChild(body_searchbar);
+      this.body_language_container.appendChild(body_mic);
+      this.body.appendChild(body_buttons);
+      this.body_buttons.appendChild(body_button_googlesearch);
+      this.body_buttons.appendChild(body_button_feelinglucky);
+      this.body.appendChild(body_language_container);
+      this.body_language_container.appendChild(body_language);
     },
 
     createFooter: function () {
@@ -100,7 +127,7 @@ var App = {
       // footer
       this.footer.style.color = "rgba(0, 0, 0, .54)";
       this.footer.style.backgroundColor = "#f2f2f2";
-      this.footer.style.fontSize = "16px";
+      this.footer.style.fontSize = "15px";
       this.footer.style.borderTop = "1px solid #dadce0";
       this.footer.style.textAlign = "left";
 
@@ -123,7 +150,7 @@ var App = {
       footer_links_left.style.justifyContent = "space-between";
       footer_links_left.style.textAlign = "left";
       footer_links_left.style.width = "25rem";
-
+      
       // applying style to all links (a element) in footer_links_left
       footer_link_advertising.innerHTML = "Advertising";
       footer_link_advertising.style.cursor = "pointer";
