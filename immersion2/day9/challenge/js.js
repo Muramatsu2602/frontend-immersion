@@ -115,12 +115,12 @@ var App = {
       body_searchbar_container.style.borderWidth = "1px";
       body_searchbar_container.style.color = "#dadce0";
       body_searchbar_container.style.padding = "0.4rem";
-      body_searchbar_container.style.width = "473px";
+      body_searchbar_container.style.width = "582px";
       body_searchbar_container.style.maxHeight = "46px";
 
-      // events of body_searchbar_container
+      // events of 
       body_searchbar_container.onmouseover = function (event) {
-        body_searchbar_container.style.boxShadow = "1px 1px 2px #999";
+        body_searchbar_container.style.boxShadow = "1px 1px 1px #999";
         body_searchbar_container.style.borderStyle = "solid";
         body_searchbar_container.style.borderColor = "lightgray";
       };
@@ -167,7 +167,7 @@ var App = {
 
       // events of body_button_googlesearch
       body_button_googlesearch.onmouseover = function (event) {
-        body_button_googlesearch.style.boxShadow = "1px 1px 2px #999";
+        body_button_googlesearch.style.boxShadow = "1px 1px 1px #999";
         body_button_googlesearch.style.borderStyle = "solid";
         body_button_googlesearch.style.borderColor = "lightgray";
       };
@@ -189,13 +189,13 @@ var App = {
 
       // events of body_button_feelinglucky
       body_button_feelinglucky.onmouseover = function (event) {
-        body_button_feelinglucky.style.boxShadow = "1px 1px 2px #999";
+        body_button_feelinglucky.style.boxShadow = "1px 1px 1px #999";
         body_button_feelinglucky.style.borderStyle = "solid";
         body_button_feelinglucky.style.borderColor = "lightgray";
       };
 
       body_button_feelinglucky.onmouseleave = function (event) {
-        body_button_feelinglucky.style.boxShadow = "0px";
+        body_button_feelinglucky.style.boxShadow = "0px 0px 0px transparent";
         body_button_feelinglucky.style.border = "none";
       };
 
