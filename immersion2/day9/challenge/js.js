@@ -245,7 +245,7 @@ var App = {
       this.footer.style.borderTop = "1px solid #dadce0";
       this.footer.style.textAlign = "left";
 
-      this.footer.style.position = "absolute";
+      this.footer.style.position = "fixed";
       this.footer.style.bottom = "0";
       this.footer.style.width = "100%";
 
