@@ -7,6 +7,9 @@ var storeElements = {
   cards: {},
 
   createApp: function () {
+    // document contains the app
+    document.getElementById("app").appendChild(this.app);
+
     // container
     this.app.style.postion = "absolute";
     this.app.style.height = "100%";
@@ -30,7 +33,6 @@ var storeElements = {
     // this.allCards.style.border = "1px solid green";
 
     this.app.appendChild(this.body);
-
   },
 
   createFooter: function () {

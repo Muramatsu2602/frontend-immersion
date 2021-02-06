@@ -12,6 +12,10 @@ var App = {
   init: function () {
     console.log("inicio do APP");
 
+    // basic settings
+    document.body.style.margin = "0";
+    document.body.style.padding = "0";
+
     this.elements.createElements();
     this.controllers.renderAllCards();
 
